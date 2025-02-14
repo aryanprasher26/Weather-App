@@ -19,6 +19,18 @@ body {
     text-align: center;
 }
 
+ .card h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+    color:#020b09;
+
+}
+
 .search{
      width: 100%;
      display: flex;
@@ -48,14 +60,26 @@ body {
     width : 60px;
     height: 60px;
     cursor: pointer;
+    
 
 }
+.search button:hover{
+    background: #27ecb7;
+    transition: background-color 0.3s ease-in-out;
+
+    
+}
+
+
+
+
 .search button img{
     width: 16px;
 }
 .weather-icon{
     width: 170px;
     margin-top: 30px;
+   
    
 }
 .weather h1{
@@ -88,4 +112,15 @@ body {
 .humidity, .wind{
     font-size: 30px;
     margin-top: -6px;
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align:left;
+    color: red;
+    margin-left: 45px;
+    font-size: 15px;
+    margin-top: -15px;
+    display: none;
 }
